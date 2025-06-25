@@ -44,6 +44,7 @@ object Build : BuildType({
     steps {
         maven {
             id = "Maven2"
+            enabled = false
 
             conditions {
                 contains("teamcity.build.branch", "master")
